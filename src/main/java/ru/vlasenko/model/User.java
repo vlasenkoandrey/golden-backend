@@ -13,7 +13,7 @@ public class User {
     private String id;
     private String name;
     private String avatar;
-    private Date dateREgistered;
+    private Date dateRegistered;
     private Date lastVisitDate;
     private String role;
 
@@ -41,12 +41,12 @@ public class User {
         this.avatar = avatar;
     }
 
-    public Date getDateREgistered() {
-        return dateREgistered;
+    public Date getDateRegistered() {
+        return dateRegistered;
     }
 
-    public void setDateREgistered(Date dateREgistered) {
-        this.dateREgistered = dateREgistered;
+    public void setDateRegistered(Date dateREgistered) {
+        this.dateRegistered = dateREgistered;
     }
 
     public Date getLastVisitDate() {
@@ -71,7 +71,7 @@ public class User {
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", avatar='" + avatar + '\'' +
-                ", dateREgistered=" + dateREgistered +
+                ", dateRegistered=" + dateRegistered +
                 ", lastVisitDate=" + lastVisitDate +
                 ", role='" + role + '\'' +
                 '}';
