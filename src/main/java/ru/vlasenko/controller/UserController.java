@@ -16,11 +16,16 @@ public class UserController {
     @Autowired
     private UserRepo repo;
 
-    @RequestMapping(value = "/user", method = {RequestMethod.PUT, RequestMethod.POST})
+    @RequestMapping(value = "/user", method = RequestMethod.POST)
     public User saveUser(@RequestBody User user) {
         if (user.getDateRegistered() == null) {
             user.setDateRegistered(new Date());
         }
+        return repo.save(user);
+    }
+
+    @RequestMapping(value = "/user/{id}", method = RequestMethod.PUT)
+    public User saveUser(@PathVariable(value="id")String id, @RequestBody User user) {
         return repo.save(user);
     }
 

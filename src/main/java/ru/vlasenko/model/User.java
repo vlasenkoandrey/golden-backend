@@ -16,6 +16,7 @@ public class User {
     private Date dateRegistered;
     private Date lastVisitDate;
     private String role;
+    private Device device;
 
     public String getId() {
         return id;
@@ -65,6 +66,14 @@ public class User {
         this.role = role;
     }
 
+    public Device getDevice() {
+        return device;
+    }
+
+    public void setDevice(Device device) {
+        this.device = device;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -74,6 +83,7 @@ public class User {
                 ", dateRegistered=" + dateRegistered +
                 ", lastVisitDate=" + lastVisitDate +
                 ", role='" + role + '\'' +
+                ", device=" + device +
                 '}';
     }
 }

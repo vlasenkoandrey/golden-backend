@@ -29,5 +29,6 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('com.amazonaws:aws-java-sdk:1.9.25')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
